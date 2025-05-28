@@ -279,9 +279,9 @@ ul {
     top: 0;
 }
 
-/* .aside .nav {
-    margin-top: 0px;
-} */
+.aside .nav {
+    margin-top: -30px;
+}
 
 .aside .nav li {
     margin-bottom: 20px;
