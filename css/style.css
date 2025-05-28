@@ -279,9 +279,9 @@ ul {
     top: 0;
 }
 
-.aside .nav {
-    margin-top: 50px;
-}
+/* .aside .nav {
+    margin-top: 0px;
+} */
 
 .aside .nav li {
     margin-bottom: 20px;
@@ -472,13 +472,13 @@ h3.my-profession {
 }
 
 .about .about-content .personal-info {
-    flex: 0 0 60%;
+    flex: 0 0 50%;
     max-width: 60%;
     margin-top: 80px;
 }
 
 .about .about-content .personal-info .info-item {
-    flex: 0 0 50%;
+    flex: 0 0 500%;
     max-width: 50%;
 }
 
@@ -1136,5 +1136,22 @@ h3.my-profession {
 
     .home-img::after {
         border: none;
+    }
+}
+
+@media(max-width: 522px) {
+    .about .about-content .personal-info .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .about .about-content .personal-info .info-item {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .about .about-content .personal-info .info-item p span {
+        display: inline;
     }
 }
