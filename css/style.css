@@ -1232,6 +1232,6 @@ h3.my-profession {
 @media(max-width: 400px){
     .bulb {
         position: absolute;
-        left: 52%;
+        left: 80%;
     }
 }
