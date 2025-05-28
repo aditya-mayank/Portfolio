@@ -1117,6 +1117,32 @@ h3.my-profession {
         right: -25%;
         bottom: -40px;
     }
+
+    .about .about-content .personal-info .buttons {
+        margin-bottom: 30px;
+    }
+
+    .portfolio .portfolio-item-inner .portfolio-overlay {
+        padding: 15px;
+        font-size: 0.85rem;
+    }
+
+    .portfolio .portfolio-overlay h3 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+
+    .portfolio .portfolio-overlay p {
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+        line-height: 1.3;
+    }
+
+    .portfolio .portfolio-overlay .github-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
 }
 
 @media(max-width: 731px) {
