@@ -729,6 +729,28 @@ h3.my-profession {
     font-weight: 500;
 }
 
+.bulb {
+    position: absolute;
+    left: 15%;
+    top: -42%;
+}
+
+.bulboff {
+    position: absolute;
+    width: 100px;
+    opacity: 1;
+}
+
+.bulbon {
+    position: absolute;
+    width: 100px;
+    opacity: 0;
+}
+
+.bulb:hover .bulbon {
+    opacity: 1;
+}
+
 .portfolio .portfolio-item {
     flex: 0 0 33.33%;
     max-width: 33.33%;
@@ -1062,12 +1084,22 @@ h3.my-profession {
         right: -18px;
         bottom: -40px;
     }
+
+    .bulb {
+        position: absolute;
+        left: 17%;
+    }
 }
 
 @media(max-width:871px) {
     .home-img::after {
         right: -50px;
         bottom: -40px;
+    }
+
+    .bulb {
+        position: absolute;
+        left: 19%;
     }
 }
 
@@ -1143,6 +1175,11 @@ h3.my-profession {
         height: 40px;
         font-size: 1.2rem;
     }
+
+    .bulb {
+        position: absolute;
+        left: 20%;
+    }
 }
 
 @media(max-width: 731px) {
@@ -1163,6 +1200,11 @@ h3.my-profession {
     .home-img::after {
         border: none;
     }
+
+    .bulb {
+        position: absolute;
+        left: 27%;
+    }
 }
 
 @media(max-width: 522px) {
@@ -1179,5 +1221,17 @@ h3.my-profession {
 
     .about .about-content .personal-info .info-item p span {
         display: inline;
+    }
+
+    .bulb {
+        position: absolute;
+        left: 40%;
+    }
+}
+
+@media(max-width: 400px){
+    .bulb {
+        position: absolute;
+        left: 44%;
     }
 }
