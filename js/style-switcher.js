@@ -41,6 +41,7 @@ dayNight.addEventListener("click", () => {
     dayNight.querySelector("i").classList.toggle("fa-sun");
     dayNight.querySelector("i").classList.toggle("fa-moon");
     document.body.classList.toggle("dark");
+    updateThemeImages();
     
     // Save the current theme to localStorage
     const theme = document.body.classList.contains("dark") ? "dark" : "light";
@@ -65,4 +66,20 @@ window.addEventListener("load", () => {
     if (savedStyle) {
         setActiveStyle(savedStyle); // Apply the saved style
     }
+
+    // Update images on initial load
+    updateThemeImages();
 });
+
+function updateThemeImages() {
+    const isDark = document.body.classList.contains('dark');
+    document.querySelectorAll('.theme-img').forEach(img => {
+        const darkSrc = img.getAttribute('data-dark');
+        const lightSrc = img.getAttribute('data-light');
+        const finalSrc = isDark ? darkSrc : lightSrc;
+        console.log(`Setting image to: ${finalSrc}`);
+        img.src = finalSrc;
+    });
+}
+
+document.addEventListener("DOMContentLoaded", updateThemeImages);
