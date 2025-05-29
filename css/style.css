@@ -403,6 +403,14 @@ h3.my-profession {
     color: var(--skin-color);
 }
 
+.color-a {
+    color: var(--text-black-900);
+}
+
+.color-rest {
+    color: var(--skin-color);
+}
+
 .home-info p {
     margin-bottom: 70px;
     font-size: 20px;
