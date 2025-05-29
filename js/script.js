@@ -1,9 +1,19 @@
 //typing animation
+const strings = [
+    "",
+    '<span class="color-a">a</span> <span class="color-rest">Computer Engineer</span>',
+    '<span class="color-a">a</span> <span class="color-rest">Web Developer</span>',
+    '<span class="color-a">a</span> <span class="color-rest">Competitive Coder</span>',
+    '<span class="color-a">a</span> <span class="color-rest">Guitarist</span>',
+    '<span class="color-a">a</span> <span class="color-rest">Flutist</span>',
+    '<span class="color-a">an</span> <span class="color-rest">Artist</span>'
+];
 var typed = new Typed(".typing", {
-    strings: ["", "Computer Engineer", "Web Developer", "Competitive Coder", "Guitarist", "Flutist", "Artist"],
+    strings: strings,
     typeSpeed: 100,
     backSpeed: 40,
-    loop: true
+    loop: true,
+    smartBackspace: true
 })
 
 //aside
@@ -81,6 +91,3 @@ function asideSectionTogglerBtn() {
         allSection[i].classList.toggle("open");
     }
 }
-
-
-
